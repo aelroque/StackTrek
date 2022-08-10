@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<style>
+h1 {text-align: center;}
+</style>
+<body>
+    <h1>Employee Interests Survey form</h1>
+</body>
+</html>
+
+<form>
+    <label for="fname">Enter your name:</label>
+    <input type ="text" id="fname" name ="fname"><br><br>
+
+    <label for="dept">Enter your department:</label>
+    <input type ="text" id="fname" name ="fname"><br><br>
+
+    <label for="your_self">Tell me about yourself:</label>
+    <textarea name="your_self" cols="40" rows="5"></textarea><br><br>
+
+    <label for="exercise">Do you exercise at home?</label>
+    <input type="radio" id="yes_no" name="exercise" value="yes">
+    <label for="exercise">Yes</label>
+    <input type="radio" id="eyes_no" name="exercise" value="no">
+    <label for="exercise">No</label><br><br>
+
+    <label for="fav_resource">How do you like to read about your favorite topics?</label><br>
+    <input type="checkbox" id="vehicle1" name="fav_resource" value="Books">
+    <label for="fav_resource">Books</label>
+    <input type="checkbox" id="vehicle2" name="fav_resource" value="Online Resources">
+    <label for="fav_resource">Online Resources</label>
+    <input type="checkbox" id="vehicle3" name="fav_resource" value="Phone Apps">
+    <label for="fav_resource">Phone Apps</label>
+    <input type="checkbox" id="vehicle3" name="fav_resource" value="Magazines">
+    <label for="fav_resource"> Magazines</label><br><br>
+
+    <label for="movie_genre">What genre of movies do you like?</label>
+    <select name="movie_genre" id="movie_genre">
+        <option value="volvo">comedy</option><br><br>
+    </select>
+
+    <br><br>
+    <input type="submit" value="Submit form">
+</form>

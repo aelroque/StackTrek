@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #time{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="time"></div>
+
+    <script>
+        d = new Date();
+        day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        display = month[d.getMonth()] + " " + d.getDate();
+
+        if (d.getHours() % 12 > 0) {
+            hour = d.getHours() % 12;
+            ampm = "PM";
+        } else {
+            hour = d.getHours();
+            ampm = "AM";
+        }
+
+        minutes = d.getMinutes();
+        seconds = d.getSeconds();
+
+        if(hour < 10) hour = "0" + hour;
+        if(minutes < 10) minutes = "0" + minutes;
+        if(seconds < 10) seconds = "0" + seconds;
+
+        display += "<br>" + hour + ":" + d.getMinutes() + ":" + d.getSeconds();
+
+        display += "<br>" + day[d.getDay()];
+
+        document.getElementById("time").innerHTML = display;
+    </script>
+</body>
+</html>
