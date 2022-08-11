@@ -8,3 +8,5 @@ function sum_adjacent_difference(arr) {
 }
 
 console.log(sum_adjacent_difference([1, 2, 3, 2, -5]));
+
+//sum
