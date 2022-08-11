@@ -9,3 +9,5 @@ const users = [
   fullUserNames = users
   .map(users => `${users.firstName} ${users.lastName}`);
   console.log(fullUserNames);
+
+  //name
